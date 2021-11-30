@@ -2,25 +2,23 @@
 
 //Ветвления
 let lang = 'ru';
-// let lang = 'en';
-let arr;
+const arrRu = ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'];
+const arrEng = ['mn', 'ts', 'wd', 'th', 'fr', 'st', 'sn'];
 
-if (lang === 'ru') {
-  arr = ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'];
+if (lang === 'ru') {  
+  console.log(arrRu);
 } else if (lang == 'en') {   
-  arr = ['mn', 'ts', 'wd', 'th', 'fr', 'st', 'sn'];
+	console.log(arrEng);
 }
-console.log(arr);
 
 switch (lang) {
-	case 'ru':
-		arr = ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'];
+	case 'ru':		
+		console.log(arrRu);
 	break;
 	case 'en':
-		arr = ['mn', 'ts', 'wd', 'th', 'fr', 'st', 'sn'];
+		console.log(arrEng);
 	break;
 }
-console.log(arr);
 
 let arr2 = {
 	'ru':['пн', 'вт', 'ср','чт', 'пт', 'сб', 'вс'],
